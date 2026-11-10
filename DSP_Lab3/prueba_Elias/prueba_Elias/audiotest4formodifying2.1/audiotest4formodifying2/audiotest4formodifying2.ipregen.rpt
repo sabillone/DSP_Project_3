@@ -1,0 +1,81 @@
+IP Upgrade report for audiotest4formodifying2
+Sun Oct 25 10:26:10 2026
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------+
+; IP Upgrade Summary                                                                ;
++------------------------------+----------------------------------------------------+
+; IP Components Upgrade Status ; Passed - Sun Oct 25 10:26:10 2026                  ;
+; Quartus Prime Version        ; 22.1std.1 Build 917 02/14/2023 SC Standard Edition ;
+; Revision Name                ; audiotest4formodifying2                            ;
+; Top-level Entity Name        ; 10orderlowpassfilter                               ;
+; Family                       ; Cyclone IV E                                       ;
++------------------------------+----------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                    ;
++-------------------+------------------------+---------+-----------------------+-----------------------+-----------------------+---------+
+; Entity Name       ; Component Name         ; Version ; Original Source File  ; Generation File Path  ; New Source File       ; Message ;
++-------------------+------------------------+---------+-----------------------+-----------------------+-----------------------+---------+
+; clk27mhz_attempt1 ; ALTPLL                 ; 14.0    ; clk27mhz_attempt1.qip ; clk27mhz_attempt1.vhd ; clk27mhz_attempt1.qip ;         ;
+; t2                ; altera_fir_compiler_ii ; 14.0    ; t2.qip                ; t2.vhd                ; t2.qip                ;         ;
+; h                 ; altera_fir_compiler_ii ; 14.0    ; h.qip                 ; h.vhd                 ; h.qip                 ;         ;
+; l                 ; altera_fir_compiler_ii ; 14.0    ; l.qip                 ; l.vhd                 ; l.qip                 ;         ;
++-------------------+------------------------+---------+-----------------------+-----------------------+-----------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "clk27mhz_attempt1.vhd" to "clk27mhz_attempt1.BAK.vhd"
+Info (11837): Started upgrading IP component ALTPLL with file "clk27mhz_attempt1.vhd"
+Info (11902): Backing up file "t2.vhd" to "t2.BAK.vhd"
+Info (11837): Started upgrading IP component altera_fir_compiler_ii with file "t2.vhd"
+Info (11902): Backing up file "h.vhd" to "h.BAK.vhd"
+Info (11837): Started upgrading IP component altera_fir_compiler_ii with file "h.vhd"
+Info (11902): Backing up file "l.vhd" to "l.BAK.vhd"
+Info (11837): Started upgrading IP component altera_fir_compiler_ii with file "l.vhd"
+Info (11131): Completed upgrading IP component ALTPLL with file "clk27mhz_attempt1.vhd"
+Info (11131): Completed upgrading IP component altera_fir_compiler_ii with file "t2.vhd"
+Info (11131): Completed upgrading IP component altera_fir_compiler_ii with file "h.vhd"
+Info (11131): Completed upgrading IP component altera_fir_compiler_ii with file "l.vhd"
+Info (23030): Evaluation of Tcl script c:/intelfpga/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4952 megabytes
+    Info: Processing ended: Sun Oct 25 10:26:14 2026
+    Info: Elapsed time: 00:00:39
+    Info: Total CPU time (on all processors): 00:00:05
+
+

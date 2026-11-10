@@ -1,0 +1,25 @@
+set_global_assignment -entity "l" -library "lib_l" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "l" -library "lib_l" -name IP_TOOL_VERSION "22.1"
+set_global_assignment -entity "l" -library "lib_l" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "lib_l" -name SPD_FILE [file join $::quartus(sip_path) "l.spd"]
+
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/dspba_library_package.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/dspba_library.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_rtl_core.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_ast.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_nativelink.tcl"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_msim.tcl"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_tb.vhd"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_mlab.m"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_model.m"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_coef_int.txt"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_input.txt"]
+set_global_assignment -library "lib_l" -name MISC_FILE [file join $::quartus(sip_path) "l_sim/l_param.txt"]

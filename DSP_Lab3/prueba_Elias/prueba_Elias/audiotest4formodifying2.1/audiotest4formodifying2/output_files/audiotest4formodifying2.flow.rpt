@@ -1,0 +1,462 @@
+Flow report for audiotest4formodifying2
+Tue Oct 27 00:14:05 2026
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow Summary                                                                            ;
++------------------------------------+----------------------------------------------------+
+; Flow Status                        ; Successful - Tue Oct 27 00:14:05 2026              ;
+; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Standard Edition ;
+; Revision Name                      ; audiotest4formodifying2                            ;
+; Top-level Entity Name              ; block1                                             ;
+; Family                             ; Cyclone IV E                                       ;
+; Device                             ; EP4CE115F29C7                                      ;
+; Timing Models                      ; Final                                              ;
+; Total logic elements               ; 12,718 / 114,480 ( 11 % )                          ;
+;     Total combinational functions  ; 10,161 / 114,480 ( 9 % )                           ;
+;     Dedicated logic registers      ; 5,750 / 114,480 ( 5 % )                            ;
+; Total registers                    ; 5750                                               ;
+; Total pins                         ; 14 / 529 ( 3 % )                                   ;
+; Total virtual pins                 ; 0                                                  ;
+; Total memory bits                  ; 15,360 / 3,981,312 ( < 1 % )                       ;
+; Embedded Multiplier 9-bit elements ; 414 / 532 ( 78 % )                                 ;
+; Total PLLs                         ; 2 / 4 ( 50 % )                                     ;
++------------------------------------+----------------------------------------------------+
+
+
++---------------------------------------------+
+; Flow Settings                               ;
++-------------------+-------------------------+
+; Option            ; Setting                 ;
++-------------------+-------------------------+
+; Start date & time ; 10/27/2026 00:12:49     ;
+; Main task         ; Compilation             ;
+; Revision Name     ; audiotest4formodifying2 ;
++-------------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                      ;
++-------------------------------------+--------------------------------------------------------+-------------------------+-------------+----------------+
+; Assignment Name                     ; Value                                                  ; Default Value           ; Entity Name ; Section Id     ;
++-------------------------------------+--------------------------------------------------------+-------------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID               ; 91758264320.179307796919180                            ; --                      ; --          ; --             ;
+; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                                   ; --                      ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; Questa Intel FPGA (VHDL)                               ; <None>                  ; --          ; --             ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                     ; --                      ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; clk27mhz_attempt1.bsf                                  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; clk27mhz_attempt1_inst.vhd                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; clk27mhz_attempt1.cmp                                  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; clk27mhz_attempt1.ppf                                  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2.cmp                                                 ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/dspba_library_package.vhd                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/dspba_library.vhd                               ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/auk_dspip_math_pkg_hpfir.vhd                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/auk_dspip_lib_pkg_hpfir.vhd                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/auk_dspip_avalon_streaming_source_hpfir.vhd     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/auk_dspip_roundsat_hpfir.vhd                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/altera_avalon_sc_fifo.v                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_rtl_core.vhd                                 ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_ast.vhd                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2.vhd                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_nativelink.tcl                               ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_msim.tcl                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_tb.vhd                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_mlab.m                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_model.m                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_coef_int.txt                                 ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_input.txt                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; t2_sim/t2_param.txt                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; s.cmp                                                  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h.cmp                                                  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/dspba_library_package.vhd                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/dspba_library.vhd                                ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/auk_dspip_math_pkg_hpfir.vhd                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/auk_dspip_lib_pkg_hpfir.vhd                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/auk_dspip_avalon_streaming_source_hpfir.vhd      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/auk_dspip_roundsat_hpfir.vhd                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/altera_avalon_sc_fifo.v                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_rtl_core.vhd                                   ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_ast.vhd                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h.vhd                                            ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_nativelink.tcl                                 ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_msim.tcl                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_tb.vhd                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_mlab.m                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_model.m                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_coef_int.txt                                   ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_input.txt                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; h_sim/h_param.txt                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l.cmp                                                  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/dspba_library_package.vhd                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/dspba_library.vhd                                ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/auk_dspip_math_pkg_hpfir.vhd                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/auk_dspip_lib_pkg_hpfir.vhd                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/auk_dspip_avalon_streaming_source_hpfir.vhd      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/auk_dspip_roundsat_hpfir.vhd                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/altera_avalon_sc_fifo.v                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_rtl_core.vhd                                   ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_ast.vhd                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l.vhd                                            ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_nativelink.tcl                                 ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_msim.tcl                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_tb.vhd                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_mlab.m                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_model.m                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_coef_int.txt                                   ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_input.txt                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; l_sim/l_param.txt                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const.bsf                                              ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const_inst.vhd                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const.inc                                              ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const.cmp                                              ; --                      ; --          ; --             ;
+; MISC_FILE                           ; suma.bsf                                               ; --                      ; --          ; --             ;
+; MISC_FILE                           ; suma_inst.vhd                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; suma.inc                                               ; --                      ; --          ; --             ;
+; MISC_FILE                           ; suma.cmp                                               ; --                      ; --          ; --             ;
+; MISC_FILE                           ; contador1.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; contador1_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; contador1.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; contador1.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; addr_counter.bsf                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; addr_counter_inst.vhd                                  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; addr_counter.inc                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; addr_counter.cmp                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; rom1.bsf                                               ; --                      ; --          ; --             ;
+; MISC_FILE                           ; rom1_inst.vhd                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; rom1.inc                                               ; --                      ; --          ; --             ;
+; MISC_FILE                           ; rom1.cmp                                               ; --                      ; --          ; --             ;
+; MISC_FILE                           ; contador2.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; contador2_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; contador2.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; contador2.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; comparador1.bsf                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; comparador1_inst.vhd                                   ; --                      ; --          ; --             ;
+; MISC_FILE                           ; comparador1.inc                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; comparador1.cmp                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const2.bsf                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const2_inst.vhd                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const2.inc                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const2.cmp                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const3.bsf                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const3_inst.vhd                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const3.inc                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const3.cmp                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const4.bsf                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const4_inst.vhd                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const4.inc                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const4.cmp                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const5.bsf                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const5_inst.vhd                                        ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const5.inc                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; const5.cmp                                             ; --                      ; --          ; --             ;
+; MISC_FILE                           ; hundred_coeffs.bsf                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; hundred_coeffs_inst.vhd                                ; --                      ; --          ; --             ;
+; MISC_FILE                           ; hundred_coeffs.inc                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; hundred_coeffs.cmp                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant1.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant1_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant1.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant1.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant2.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant2_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant2.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant2.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant3.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant3_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant3.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant3.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant4.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant4_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant4.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant4.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant5.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant5_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant5.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant5.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant6.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant6_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant6.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant6.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant7.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant7_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant7.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant7.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant8.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant8_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant8.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant8.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant9.bsf                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant9_inst.vhd                                     ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant9.inc                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant9.cmp                                          ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant10.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant10_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant10.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant10.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant11.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant11_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant11.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant11.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant12.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant12_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant12.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant12.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant13.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant13_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant13.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant13.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant14.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant14_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant14.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant14.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant15.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant15_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant15.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant15.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant16.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant16_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant16.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant16.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant17.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant17_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant17.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant17.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant18.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant18_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant18.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant18.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant19.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant19_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant19.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant19.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant20.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant20_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant20.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant20.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant21.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant21_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant21.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant21.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant22.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant22_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant22.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant22.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant23.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant23_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant23.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant23.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant24.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant24_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant24.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant24.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant25.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant25_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant25.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant25.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant26.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant26_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant26.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant26.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant27.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant27_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant27.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant27.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant28.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant28_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant28.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant28.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant29.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant29_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant29.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant29.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant30.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant30_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant30.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant30.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant31.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant31_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant31.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant31.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant32.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant32_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant32.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant32.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant33.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant33_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant33.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant33.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant34.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant34_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant34.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant34.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant35.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant35_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant35.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant35.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant36.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant36_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant36.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant36.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant37.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant37_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant37.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant37.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant38.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant38_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant38.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant38.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant39.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant39_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant39.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant39.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant40.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant40_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant40.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant40.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant41.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant41_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant41.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant41.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant42.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant42_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant42.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant42.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant43.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant43_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant43.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant43.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant44.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant44_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant44.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant44.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant45.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant45_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant45.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant45.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant46.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant46_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant46.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant46.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant47.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant47_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant47.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant47.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant48.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant48_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant48.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant48.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant49.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant49_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant49.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant49.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant50.bsf                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant50_inst.vhd                                    ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant50.inc                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; constant50.cmp                                         ; --                      ; --          ; --             ;
+; MISC_FILE                           ; suma_symetric.bsf                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; suma_symetric_inst.vhd                                 ; --                      ; --          ; --             ;
+; MISC_FILE                           ; suma_symetric.inc                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; suma_symetric.cmp                                      ; --                      ; --          ; --             ;
+; MISC_FILE                           ; arbolsumador.bsf                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; arbolsumador_inst.vhd                                  ; --                      ; --          ; --             ;
+; MISC_FILE                           ; arbolsumador.inc                                       ; --                      ; --          ; --             ;
+; MISC_FILE                           ; arbolsumador.cmp                                       ; --                      ; --          ; --             ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                                   ; --                      ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family)                 ; --                      ; block1      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family)                 ; --                      ; block1      ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family)                 ; --                      ; block1      ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                    ; --                      ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                  ; --                      ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                                           ; --                      ; --          ; --             ;
+; SPD_FILE                            ; t2.spd                                                 ; --                      ; --          ; --             ;
+; SPD_FILE                            ; h.spd                                                  ; --                      ; --          ; --             ;
+; SPD_FILE                            ; l.spd                                                  ; --                      ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                     ; --                      ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                     ; --                      ; --          ; --             ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                     ; --                      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; block1                                                 ; audiotest4formodifying2 ; --          ; --             ;
++-------------------------------------+--------------------------------------------------------+-------------------------+-------------+----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 5100 MB             ; 00:00:10                           ;
+; Fitter               ; 00:00:41     ; 1.4                     ; 6996 MB             ; 00:00:16                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4796 MB             ; 00:00:00                           ;
+; Timing Analyzer      ; 00:00:03     ; 2.3                     ; 5170 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:07     ; 1.0                     ; 4828 MB             ; 00:00:03                           ;
+; Total                ; 00:01:10     ; --                      ; --                  ; 00:00:30                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; ENG127-10        ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; ENG127-10        ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; ENG127-10        ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; ENG127-10        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; ENG127-10        ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off audiotest4formodifying2 -c audiotest4formodifying2
+quartus_fit --read_settings_files=off --write_settings_files=off audiotest4formodifying2 -c audiotest4formodifying2
+quartus_asm --read_settings_files=off --write_settings_files=off audiotest4formodifying2 -c audiotest4formodifying2
+quartus_sta audiotest4formodifying2 -c audiotest4formodifying2
+quartus_eda --read_settings_files=off --write_settings_files=off audiotest4formodifying2 -c audiotest4formodifying2
+
+
+
