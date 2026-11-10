@@ -1,0 +1,42 @@
+Quartus II Archive log --	M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/audiotest4formodifying2_tmp_archive.qarlog
+
+Archive:	M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/audiotest4formodifying2_tmp_archive.qar
+Date:		Mon Aug 04 16:33:55 2014
+Quartus II 64-Bit		14.0.0 Build 200 06/17/2014 SJ Web Edition
+
+	=========== Files Selected: ===========
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/CLK_DIV.VHD
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/Chain3.cdf
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/altera_up_audio_bit_counter.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/altera_up_audio_in_deserializer.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/altera_up_audio_out_serializer.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/altera_up_clock_edge.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/altera_up_i2c.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/altera_up_i2c_av_auto_initialize.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/altera_up_slow_clock_generator.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/altera_up_sync_fifo.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/audio_and_video_config.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/audio_codec.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/audiotest4formodifying2.qpf
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/audiotest4formodifying2.qsf
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/block1.bdf
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/clk27mhz_attempt1.bsf
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/clk27mhz_attempt1.cmp
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/clk27mhz_attempt1.ppf
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/clk27mhz_attempt1.qip
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/clk27mhz_attempt1.vhd
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/clk27mhz_attempt1_inst.vhd
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/clock_generator.v
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/lpm_constant0.vhd
+M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/part1.vhd
+c:/altera/14.0/quartus/bin64/assignment_defaults.qdf
+	======= Total: 25 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Mon Aug 04 16:33:59 2014
+Source archive file:	M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying2/audiotest4formodifying2_tmp_archive.qar
+Archive was extracted into	M:/_EE3323_Digital_Systems/old files/labtesting/audiotest4formodifying3/
+		 - successfully.

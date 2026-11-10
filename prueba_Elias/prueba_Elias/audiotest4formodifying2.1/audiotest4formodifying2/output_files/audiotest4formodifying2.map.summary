@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Oct 27 00:13:07 2026
+Quartus Prime Version : 22.1std.1 Build 917 02/14/2023 SC Standard Edition
+Revision Name : audiotest4formodifying2
+Top-level Entity Name : block1
+Family : Cyclone IV E
+Total logic elements : 15,226
+    Total combinational functions : 10,161
+    Dedicated logic registers : 5,750
+Total registers : 5750
+Total pins : 14
+Total virtual pins : 0
+Total memory bits : 15,360
+Embedded Multiplier 9-bit elements : 414
+Total PLLs : 2
